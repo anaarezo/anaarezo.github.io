@@ -2,7 +2,7 @@
   "name": "ana_arezo",
   "version": "1.0.0",
   "description": "Portfolio Ana Arezo",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp serve"
@@ -28,13 +28,13 @@
     "gulp": "^3.9.1",
     "gulp-changed": "^3.1.1",
     "gulp-clean": "^0.3.2",
+    "gulp-connect": "^5.0.0",
     "gulp-copy": "^1.0.1",
     "gulp-file-include": "^1.2.0",
     "gulp-imagemin": "^4.0.0",
     "gulp-jshint": "^2.0.4",
     "gulp-sass": "^3.1.0",
     "jshint": "^2.9.5",
-    "jshint-stylish": "^2.2.1",
-    "gulp-connect": "^5.0.0"
+    "jshint-stylish": "^2.2.1"
   }
 }
