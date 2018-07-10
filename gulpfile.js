@@ -11,16 +11,16 @@ var fileinclude   = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
 
 var bases = {
-    dev: 'dev/',
+    v: 'v/',
     build: 'build/'
 };
 
 var paths = {
-    sass: ['dev/sass/*.scss'],
-    scripts: ['dev/js/**/*.js'],
-    html: ['dev/**/*.html'],
-    images: ['dev/images/**/*'],
-    vendor: ['dev/vendor/**/*']
+    sass: ['src/sass/*.scss'],
+    scripts: ['src/js/**/*.js'],
+    html: ['src/**/*.html'],
+    images: ['src/images/**/*'],
+    vendor: ['src/vendor/**/*']
 };
 
 gulp.task('clean', function() {
@@ -70,7 +70,7 @@ gulp.task('images', function () {
 
 // Lint JavaScript
 gulp.task('lint', function () {
-  return gulp.src('./dev/js/**/*.js')
+  return gulp.src('./src/js/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(jshint.reporter('fail'));
@@ -115,8 +115,8 @@ gulp.task('serve', ['html', 'scripts', 'sass', 'images', 'copy'], function() {
     });
 
     gulp.watch(paths.html, ['html-watch']);
-    gulp.watch(['./dev/js/**/*.js'], ['scripts-watch']);
-    gulp.watch(['./dev/sass/*.scss'], ['sass']);
+    gulp.watch(['./src/js/**/*.js'], ['scripts-watch']);
+    gulp.watch(['./src/sass/*.scss'], ['sass']);
     gulp.watch(paths.images, ['images-watch']);
     gulp.watch(paths.vendor, ['copy-watch']);
 });
