@@ -1,0 +1,43 @@
+// Footer Style
+footer{
+    background-color: $color3;
+    color: $color4;
+    .footer-content{
+        padding: 60px 0 80px;
+        h3{
+            color: $color5;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+            li{
+                padding: 5px 0;
+                font-size: 16px;
+                line-height: 1.5;
+                a{
+                    color: $color4;
+                    &:hover{
+                        color: $color5;
+                    }
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+            &.footer-social{
+                margin: 25px 0 15px -15px;
+                li{
+                    display: inline-block;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
