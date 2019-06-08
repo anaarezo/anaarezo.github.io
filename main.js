@@ -1,24 +1,41 @@
-function yourselfie(){
+// ScreenSaver
+function yourselfieScreen() {
+    var elem = document.querySelector('.ys-screensaver');
+    elem.parentNode.removeChild(elem);
+}
+window.addEventListener('click', yourselfieScreen);
 
-    var yourselfieCam = document.getElementById('cam-yourselfie');
-    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia; 
+// Webcam Player
+function yourselfieWebcam() {
 
-    if (navigator.getUserMedia){
+    var yourselfieCam = document.getElementById('yourselfie');
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+    if (navigator.getUserMedia) {
         navigator.getUserMedia({
             video: true,
             audio: false
-        }, function (stream){
+        }, function (stream) {
             yourselfieCam.srcObject = stream;
             yourselfieCam.play();
+            yourselfieCam2.srcObject = stream;
+            yourselfieCam2.play();
             //console.log(stream);
-            /**window.URL = window.URL || window.webkitURL;
-            var streamURL = window.srcObject(stream);
-            yourselfieCam.src = streamURL;
-            yourselfieCam.play();*/
-        }, function (error){
+        }, function (error) {
             console.warn(error);
         });
     }
 }
+window.addEventListener('load', yourselfieWebcam);
 
-window.addEventListener('load', yourselfie);
+// Snapshot
+/*function yourselfieSnapshot{
+	
+}
+window.addEventListener('load', yourselfieSnapshot);*/
+
+// LocalStorage
+/*function yourselfieStorage{
+	
+}
+window.addEventListener('load', yourselfieStorage);*/
