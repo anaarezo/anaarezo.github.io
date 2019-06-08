@@ -8,8 +8,8 @@ function yourselfie(){
             video: true,
             audio: false
         }, function (stream){
-            video.srcObject = stream;
-            video.play();
+            yourselfieCam.srcObject = stream;
+            yourselfieCam.play();
             //console.log(stream);
             /**window.URL = window.URL || window.webkitURL;
             var streamURL = window.srcObject(stream);
