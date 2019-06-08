@@ -10,7 +10,7 @@ function yourselfie(){
         }, function (stream){
             //console.log(stream);
             window.URL = window.URL || window.webkitURL;
-            var streamURL = window.URL.HTMLMediaElement.srcObject(stream);
+            var streamURL = window.srcObject(stream);
             yourselfieCam.src = streamURL;
             yourselfieCam.play();
         }, function (error){
