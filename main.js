@@ -14,6 +14,7 @@ function yourselfie(){
             window.URL = window.URL || window.webkitURL;
             var streamURL = window.URL.createObjectURL(stream);
             yourselfieCam.src = streamURL;
+            yourselfieCam.play();
         }, function (error){
             console.warn(error);
         });
