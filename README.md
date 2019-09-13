@@ -16,7 +16,7 @@
 Clone this repo enter the folder you cloned or downloaded, install dependencies and run `npm run dev`;
 
 ```shell
-    $ cd ed-br-2_0
+    $ cd anaarezo.github.io
     $ npm install
 ```
 
