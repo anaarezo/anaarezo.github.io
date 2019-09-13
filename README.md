@@ -2,7 +2,7 @@
 
 * https://anaarezo.github.io/
 
-##LinkedIn
+## LinkedIn
 * https://www.linkedin.com/in/anaarezo/
 
 ## Pre-requisites
