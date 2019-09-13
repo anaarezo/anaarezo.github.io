@@ -33,7 +33,11 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   /*background: #161415 url(../images/header-background.jpg) no-repeat top center;*/
+   background: #FFAFBD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -52,7 +56,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -66,7 +70,7 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #111111;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -179,7 +183,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #963434; }
 
 
 /* ------------------------------------------------------------------ */
@@ -187,7 +191,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+   background: #f1f1f1;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -198,7 +202,7 @@ ul#nav li.current a { color: #F06000; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #7A7A7A;
    margin-bottom: 12px;
 }
 #about p {
@@ -222,8 +226,8 @@ ul#nav li.current a { color: #F06000; }
    background: #444;
 }
 #about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
+   background: #7A7A7A;
+   color: #ffffff;
 }
 #about .download .button i {
    margin-right: 15px;
@@ -971,7 +975,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #963434;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
