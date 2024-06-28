@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "12:34"
+      time: "12:38"
       timezone: "Europe/London"
     ignore:
       # Node
