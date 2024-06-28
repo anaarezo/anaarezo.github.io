@@ -1,0 +1,33 @@
+name: Dependabot PR Check
+on: pull_request
+jobs:
+  setup-variables:
+    name: Set up PR variables for NewRepo
+    runs-on: ubuntu-latest
+    if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
+    outputs:
+      prVars: ${{ steps.setup-vars.outputs.vars }}
+    steps:
+      - id: setup-vars
+        run: echo "vars={\"prBranch\":\"$(echo $PR_BRANCH)\"}" >> $GITHUB_OUTPUT
+        env:
+          PR_BRANCH: ${{ github.head_ref }}
+  check-if-dependabot-pr:
+    name: Verify Dependabot PR for NewRepo
+    needs: setup-variables
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Dependabot PR metadata
+        id: dependabot-metadata
+        uses: dependabot/fetch-metadata@v1.3.5
+      - name: Log action for non-major updates
+        if: ${{ steps.dependabot-metadata.outputs.update-type != 'version-update:semver-major' }}
+        run: echo "Triggering workflow to auto-merge Dependabot PR with inputs $(echo $INPUTS)"
+      - name: Auto-merge for non-major updates
+        if: ${{ steps.dependabot-metadata.outputs.update-type != 'version-update:semver-major' }}
+        uses: benc-uk/workflow-dispatch@v1.2.2
+        with:
+          workflow: newrepo-dependabot-auto-merge.yml
+          inputs: ${{ needs.setup-variables.outputs.prVars }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.head.ref }}

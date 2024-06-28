@@ -1,0 +1,18 @@
+name: Spyrius Labeler
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  add-labels:
+    name: Add Labels
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v4
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
