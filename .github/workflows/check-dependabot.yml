@@ -2,7 +2,7 @@ name: Dependabot PR Check
 on: pull_request
 jobs:
   setup-variables:
-    name: Set up PR variables for NewRepo
+    name: Set up PR variables
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     outputs:
@@ -13,7 +13,7 @@ jobs:
         env:
           PR_BRANCH: ${{ github.head_ref }}
   check-if-dependabot-pr:
-    name: Verify Dependabot PR for NewRepo
+    name: Verify Dependabot PR
     needs: setup-variables
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +27,7 @@ jobs:
         if: ${{ steps.dependabot-metadata.outputs.update-type != 'version-update:semver-major' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
-          workflow: newrepo-dependabot-auto-merge.yml
+          workflow: dependabot-auto-merge.yml
           inputs: ${{ needs.setup-variables.outputs.prVars }}
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: ${{ github.event.pull_request.head.ref }}
