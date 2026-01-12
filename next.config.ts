@@ -12,9 +12,9 @@ const computedBasePath = (isGitHubPages && !isUserSite) ? `/${repoName}` : '';
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  images: { unoptimized: true },
   basePath: computedBasePath,
   assetPrefix: computedBasePath,
+  images: { unoptimized: true },
   reactStrictMode: true,
   env: {
     NEXT_PUBLIC_BASE_PATH: computedBasePath
