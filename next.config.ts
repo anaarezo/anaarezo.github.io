@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? 'portefeuille';
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? '/anaarezo.github.io';
 const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 // User site (anaarezo.github.io) deploys to root; project sites deploy to /repo-name/
 const isUserSite = repoName === 'anaarezo.github.io';
