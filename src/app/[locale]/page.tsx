@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center text-center space-y-8 min-h-screen bg-white dark:bg-black py-16">
       <Image
-        src="/profile.png"
+        src="/assets/profile.png"
         alt="Ana Arezo"
         width={128}
         height={128}
