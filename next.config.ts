@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from 'next-intl/plugin';
 
-// Let next-intl auto-detect src/i18n/request.ts as recommended
-const withNextIntl = createNextIntlPlugin();
+// Explicitly point to the request config to avoid resolution errors
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? '/anaarezo.github.io';
 const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
