@@ -1,3 +1,0 @@
-module.exports=[35112,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactDOM},15925,a=>{"use strict";var b=a.i(32886);function c(a,b){return(...a)=>{try{return b(...a)}catch{throw Error(void 0)}}}let d=c(0,b.useTranslations);c(0,b.useFormatter),a.s(["useTranslations",()=>d])},91990,a=>{"use strict";a.i(87924),a.i(71987),a.i(15925);let b=Error("Cannot find module '@/i18n/routing'");throw b.code="MODULE_NOT_FOUND",b}];
-
-//# sourceMappingURL=_d7d097cd._.js.map
