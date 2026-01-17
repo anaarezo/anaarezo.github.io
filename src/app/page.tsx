@@ -9,8 +9,8 @@ export default function Home() {
       <Image
         src="/assets/profile.png"
         alt="Ana Arezo"
-        width={128}
-        height={128}
+        width={200}
+        height={200}
         className="rounded-full border-4 border-blue-500 shadow-lg"
       />
       <div>
@@ -25,9 +25,9 @@ export default function Home() {
         <Link href="/projects" className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-shadow">
           View Projects
         </Link>
-        <Link href="/contact" className="px-6 py-3 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-50 font-medium rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+        {/* <Link href="/contact" className="px-6 py-3 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-50 font-medium rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
           Contact Me
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
