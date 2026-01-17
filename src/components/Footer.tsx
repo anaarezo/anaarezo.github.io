@@ -1,11 +1,8 @@
 'use client';
 
 import { FaGithub, FaLinkedin, FaTwitter, FaCodepen } from "react-icons/fa";
-import { useTranslations } from 'next-intl';
 
 export default function Footer() {
-  const t = useTranslations('footer');
-  
   return (
     <footer className="bg-white dark:bg-black mt-32 border-t border-zinc-200 dark:border-zinc-800">
       <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -28,7 +25,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="mt-8 text-center text-base text-zinc-600 dark:text-zinc-400">
-          &copy; {new Date().getFullYear()} Ana Arezo. {t('rights')}
+          &copy; {new Date().getFullYear()} Ana Arezo. All rights reserved.
         </p>
       </div>
     </footer>
