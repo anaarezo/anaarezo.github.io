@@ -11,7 +11,8 @@ const isUserSite = repoName === 'anaarezo.github.io';
 const computedBasePath = (isGitHubPages && !isUserSite) ? `/${repoName}` : '';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // output: 'export',
+   output: 'standalone',
   trailingSlash: true,
   basePath: computedBasePath,
   assetPrefix: computedBasePath,
