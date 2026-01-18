@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaCodepen } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-black mt-32 border-t border-zinc-200 dark:border-zinc-800">
+    <footer className=" relative bg-white dark:bg-black mt-32 border-t border-zinc-200 dark:border-zinc-800 z-40">
       <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center space-x-6">
           <a href="https://github.com/anaarezo" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-blue-500 transition-colors">
