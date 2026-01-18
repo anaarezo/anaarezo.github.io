@@ -1,22 +1,6 @@
-[00:00:00.699] Server  LOG     ✓ Ready in 498ms
-[00:00:02.107] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:00:02.107] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.PointsMaterial.
-[00:00:02.107] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:02:12.455] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:02:12.456] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.PointsMaterial.
-[00:02:12.456] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:02:12.456] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:02:12.456] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.PointsMaterial.
-[00:02:12.456] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:02:19.324] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:02:19.324] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.PointsMaterial.
-[00:02:19.324] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:04:06.301] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:04:06.301] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.PointsMaterial.
-[00:04:06.301] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:04:06.301] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:04:06.301] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.PointsMaterial.
-[00:04:06.301] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:04:13.567] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
-[00:04:13.567] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.PointsMaterial.
-[00:04:13.567] Browser WARN    THREE.Material: 'emissive' is not a property of THREE.MeshBasicMaterial.
+[00:00:00.786] Server  LOG     ✓ Ready in 543ms
+[00:04:20.327] Server  LOG     ✓ Compiled in 335ms
+[00:04:32.586] Server  LOG     ✓ Compiled in 16ms
+[00:08:58.753] Server  LOG     ✓ Compiled in 33ms
+[00:09:07.375] Server  LOG     ✓ Compiled in 53ms
+[00:10:21.806] Server  LOG     ✓ Compiled in 71ms
